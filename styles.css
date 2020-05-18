@@ -1,0 +1,52 @@
+/*This is a comment in css*/
+
+/*This is the body formatting*/
+body {background-color: powderblue;}
+
+/*This is the header formatting*/
+h1 {color: blue;}
+
+/*This is the paragraph formatting*/
+p {
+    color: red;
+    margin: 10px;
+    padding: 10px;    
+}
+
+/*This is formatting based on the id*/
+#unique {
+    color: orange
+}
+
+/*This is the formatting based on the class attribute*/
+p.myclass {
+    color: black
+}
+p.anotherclass {
+    color: pink
+}
+
+/* Coloring of the links*/
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+  
+a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+  
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+  
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}

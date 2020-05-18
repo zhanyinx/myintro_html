@@ -1,40 +1,93 @@
 <!--This is a comment-->
 <!--!DOCTYPE defines the document type, in this case html-->
 <!DOCTYPE html>
-<!--body is what the page will show-->
-<body>
-    <!--This is a header-->
-    <h1>Main</h1>
-    <!--This is a paragraph-->
-    <p>First paragraph</p>
 
-    <!--Different categories of headers, from 1 to 6 in order of importancy-->
-    <h1>This is heading 1</h1>
-    <h3>This is heading 6</h3>
+<!--Define language of the html page-->
+<html lang="en-US">
+    <!--This is for metadata, not shown in the page-->
+    <head>
+        <title>My first page</title>
+        <meta charset="UTF-8">
+        <!--This is CSS styling inline-->
+        <!--
+        <style>
+            body {background-color: powderblue;}
+            h1   {color: blue;}
+            p    {color: red;}
+        </style>
+        -->
+        <!--This is CSS tyling external-->
+        <link rel='stylesheet', href="styles.css">
+    </head>
+    <!--body is what the page will show-->
+    <body>
+        <!--This is a header-->
+        <h1>Main</h1>
+        <!--This is a paragraph, id identifies the paragraph-->
+        <p id="top" style="color:darkred">First paragraph</p>
 
-    <p>This is a paragraph.</p>
-    <p>This is another paragraph.</p>
+        <!--Different categories of headers, from 1 to 6 in order of importancy-->
+        <h1>This is heading 1</h1>
+        <h3>This is heading 6</h3>
 
-    <!--This is to define a link. NB IMPORTANT <br> tag defines line break-->
-    <a href="https://www.google.com">This is a link to google <br></a>
+        <p>This is a paragraph.</p>
+        <p>This is another paragraph.</p>
 
-    <!--This is how you load images, you can put also links in the source (src)-->
-    <img src="download.png" alt="Not found source img" width="104" height="142">
+        <!--This is to define a link. NB IMPORTANT <br> tag defines line break-->
+        <a href="https://www.google.com" target="_blank">This is a link to google <br></a>
 
-    <!--This is how you add click button-->
-    <button>Click me</button>
+        <!--This is how you load images, you can put also links in the source (src)-->
+        <img title="This is an image" src="download.png" alt="Not found source img" style="width:128px;height:auto;">
 
-    <!--This is not ordered list-->
-    <ul>
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Milk</li>
-    </ul>
-    
-    <!--This is ordered list-->
-    <ol>
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Milk</li>
-    </ol>
-</body>
+        <!--This is how you add click button-->
+        <button>Click me</button>
+
+        <!--This is not ordered list-->
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+        
+        <!--This is ordered list-->
+        <!--Title is shown if you move to the element-->
+        <ol title="Ordered list">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+
+        <!--Horizontal rule (two horizontal line enclosing everything btw-->
+        <hr>
+        <h2>This is heading 2</h2>
+        <p>This is some other text.</p>
+        <hr>
+
+        <!--Different attributes-->
+        <h2>All HTML elements can have attributes</h2>
+        <ol>
+            <li>The title attribute provides additional "tool-tip" information</li>
+            <li>The href attribute provides address information for links</li>
+            <li>The width and height attributes provide size information for images</li>
+            <li>The alt attribute provides text for screen readers</li>
+            <li>The id specifies an unique id to the element</li>
+            <li>The stype specifies the css style</li>
+            <li>The disable is to disable input element</li>
+        </ol>
+
+        <p>Paragraphs ignore spaces in the raw text</p>
+        <pre>But \<pre></pre>  keeps them. 
+        New line</pre>
+
+        <!--Specific style using id to identify the element, in css file and links, identified as #id-->
+        <p id="unique">I have different style, defined in styles.css file</p>
+
+        <a href="#unique"> This is a bookmark <br></a>
+        <a href="#top"> This is another bookmark</a>
+        <!--Specific styling of a class of elements, in css file identified as tag.class-->
+        <p class="myclass"> This is my class</p>
+        <p class="myclass"> This is another class my class</p>
+        <p class="secondclass"> This is different class my class</p>
+
+    </body>
+</html>
